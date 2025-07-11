@@ -22,3 +22,15 @@ jobs:
 
             - name: "cheking node version"
               run: node --version
+
+            - name: 'cloning the repo'
+              run: actions/checkout@v2
+            
+            - name: 'list directory'
+              run: ls
+
+            - name: 'installing dependency'
+              run: npm install
+
+            - name: 'list directory'
+              run: ls
